@@ -1,13 +1,23 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import SobreMim from './sections/SobreMim'
+import Projetos from './sections/Projetos'
+import Experiencias from './sections/Experiencias'
+import Contato from './sections/Contato'
 
 function App() {
-
-  return <h1>Meu portfólio</h1>
-  
-};
+  return (
+    <>
+      <Header />
+      <main>
+        <SobreMim />
+        <Projetos />
+        <Experiencias />
+        <Contato />
+      </main>
+      <Footer />
+    </>
+  )
+}
 
 export default App
