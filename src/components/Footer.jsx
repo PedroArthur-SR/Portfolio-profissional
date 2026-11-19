@@ -1,9 +1,9 @@
 function Footer(){
     return (
     <footer>
-        <p>© 2026 Seu Nome</p>
+        <p>Pedro Arthur © 2026 </p>
     </footer>
     )
 }
 
-export default Footer
+export default Footer       
