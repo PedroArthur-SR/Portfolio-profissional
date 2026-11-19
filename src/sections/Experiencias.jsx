@@ -1,22 +1,25 @@
-import experiencias from '../data/experiencias'
+import experiencias from '../data/experiencias';
 
-function Experiencias() {
+function Experiencias({ t }) {
   return (
     <section id="experiencias">
-      <h2>Experiências</h2>
+      <h2>{t.experiencias.titulo}</h2>
 
       <div className="lista-experiencias">
-        {experiencias.map((exp) => (
+        {experiencias.map((exp, index) => (
           <article className="experiencia" key={exp.id}>
             <span className="periodo">{exp.periodo}</span>
-            <h3>{exp.cargo}</h3>
+
+            <h3>{t.experiencias.lista[index].cargo}</h3>
+
             <p className="instituicao">{exp.instituicao}</p>
-            <p>{exp.descricao}</p>
+
+            <p>{t.experiencias.lista[index].descricao}</p>
           </article>
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Experiencias
+export default Experiencias;
