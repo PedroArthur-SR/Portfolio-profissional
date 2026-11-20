@@ -61,7 +61,8 @@ const traducoes = {
       email: 'E-mail',
       mensagem: 'Mensagem',
       enviar: 'Enviar',
-      sucesso: 'Mensagem validada com sucesso!',
+      sucesso: 'Mensagem enviada com sucesso!',
+      erroEnvio: 'Não foi possível enviar. Tente novamente.',
       erros: {
         nome: 'Digite seu nome.',
         emailVazio: 'Digite seu e-mail.',
@@ -137,7 +138,8 @@ const traducoes = {
       email: 'Email',
       mensagem: 'Message',
       enviar: 'Send',
-      sucesso: 'Message validated successfully!',
+      sucesso: 'Message sent successfully!',
+      erroEnvio: 'Could not send. Please try again.',
       erros: {
         nome: 'Please enter your name.',
         emailVazio: 'Please enter your email.',
